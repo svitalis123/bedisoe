@@ -1,0 +1,54 @@
+$yellow: #fbe828;
+$font1: 25px;
+
+@mixin mytheme($norm: linear-gradient(90deg, #667eea 0%, #764ba2 100%)){
+  background: $norm;
+  color: $yellow;
+  box-shadow: 10% 10% 10% $yellow;
+}
+
+.header_container {
+  position: relative;
+  z-index: 3;
+}
+
+.small_container {
+  @include mytheme;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.MuiPaper-root {
+  left: 178px !important;
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  min-width: 200px !important;
+}
+
+.small_container_button1 {
+  color: $yellow !important;
+
+  .small_container_button1_bars {
+    font-size: $font1;
+  }
+}
+
+.large_container {
+  @include mytheme;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  nav {
+    display: flex;
+    gap: 2rem;
+    a {
+      color: $yellow;
+      text-decoration: none;
+      font-size: $font1;
+    }
+  }
+}
