@@ -1,0 +1,87 @@
+$yellow: #fbe828;
+$white : #fff;
+$bluish: #677ee8;
+$darkbl: #754fa6;
+$almostblac: #0c1421;
+$black: rgba(37, 36, 36, 0.808);
+$font1: 25px;
+$font2: 18px;
+$font3: 15px;
+
+@mixin mytheme($norm: linear-gradient(90deg, #667eea 0%, #764ba2 100%)){
+  background: $norm;
+  color: $yellow;
+  box-shadow: 10% 10% 10% $yellow;
+}
+
+// container
+
+.product_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product_container_figure1,
+.product_container_figure2,
+.product_container_figure3 {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 720px) {
+    height: 250px;
+  }
+  img {
+    width: 90%;
+    object-fit: contain;
+    border-radius: 12px;
+    @media screen and (min-width: 720px) {
+      width: 90%;
+      object-fit:fill;
+    }
+  }
+}
+
+.product_container_row1,
+.product_container_row2 {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  height: 480px; 
+  @media screen and (min-width: 720px) {
+    grid-template-columns: repeat(2, 600px);
+    height: 1300px;
+    margin: auto;
+  }
+}
+
+.product_container_row1_divs {
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+    @media screen and (min-width: 720px) {
+      padding: 3rem;
+    }
+    img {
+      width: 90%;
+      object-fit: contain;
+      @media screen and (min-width: 720px) {
+        width: 100%;
+      }
+    }
+
+    h3 {
+      font-size: $font2;
+      text-transform: capitalize;
+      padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+    
+    p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 80%;
+      overflow: hidden;
+    }
+  }
+}

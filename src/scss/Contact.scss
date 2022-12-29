@@ -1,0 +1,16 @@
+// sass prerequisity
+$yellow: #fbe828;
+$white : #fff;
+$bluish: #677ee8;
+$darkbl: #754fa6;
+$almostblac: #0c1421;
+$black: rgba(37, 36, 36, 0.808);
+$font1: 25px;
+$font2: 18px;
+$font3: 15px;
+
+@mixin mytheme($norm: linear-gradient(90deg, #667eea 0%, #764ba2 100%)){
+  background: $norm;
+  color: $yellow;
+  box-shadow: 10% 10% 10% $yellow;
+}

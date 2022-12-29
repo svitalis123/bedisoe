@@ -60,9 +60,9 @@ function Header() {
                   'aria-labelledby': 'basic-button',
                 }}
               >
-                <MenuItem onClick={handleClose}>Home</MenuItem>
-                <MenuItem onClick={handleClose}>Products</MenuItem>
-                <MenuItem onClick={handleClose}>Contact</MenuItem>
+                <Link to="/" style={{ textDecoration: 'none', color: '#111' }}><MenuItem onClick={handleClose}>Home</MenuItem></Link>
+                <Link to="/products" style={{ textDecoration: 'none', color: '#111' }}><MenuItem onClick={handleClose}>Products</MenuItem></Link>
+                <Link to="/contact" style={{ textDecoration: 'none', color: '#111' }}><MenuItem onClick={handleClose}>Contact</MenuItem></Link>
                 <MenuItem onClick={handleClose}>About</MenuItem>
               </Menu>
             </div>
@@ -72,8 +72,8 @@ function Header() {
             <div className="large_container">
               <nav>
                 <Link to="/">Home</Link>
-                <Link to="/">Products</Link>
-                <Link to="/">Contact</Link>
+                <Link to="/products">Products</Link>
+                <Link to="/contact">Contact</Link>
                 <Link to="/">About</Link>
               </nav>
             </div>
