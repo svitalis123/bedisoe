@@ -1,0 +1,66 @@
+$yellow: #fbe828;
+$white : #fff;
+$bluish: #677ee8;
+$darkbl: #754fa6;
+$almostblac: #0c1421;
+$greyspecial: #eae6eb;
+$redspecial: #b4345c;
+$grey3: hsl(209, 34%, 30%);
+$black: rgba(37, 36, 36, 0.808);
+$font1: 25px;
+$font2: 18px;
+$font3: 15px;
+$font4: 40px;
+
+@mixin mytheme($norm: linear-gradient(90deg, #667eea 0%, #764ba2 100%)){
+  background: $norm;
+  color: $yellow;
+  box-shadow: 10% 10% 10% $yellow;
+}
+
+
+.question {
+  padding: 1rem 1.5rem;
+  border: 2px solid $greyspecial;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question h4 {
+  text-transform: none;
+  line-height: 1.5;
+}
+.question p {
+  color: $white;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question header h4 {
+  margin-bottom: 0;
+}
+.btn {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: $greyspecial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $redspecial;
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+.question-title {
+  cursor: pointer;
+}

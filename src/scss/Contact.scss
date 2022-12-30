@@ -8,9 +8,87 @@ $black: rgba(37, 36, 36, 0.808);
 $font1: 25px;
 $font2: 18px;
 $font3: 15px;
+$font4: 40px;
 
 @mixin mytheme($norm: linear-gradient(90deg, #667eea 0%, #764ba2 100%)){
   background: $norm;
   color: $yellow;
   box-shadow: 10% 10% 10% $yellow;
+}
+
+.contact_container {
+  height: 100vh;
+  position: relative;
+}
+
+.contact_container_nav {
+    position: absolute;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    background: $darkbl;
+    a {
+      font-size: $font2;
+      color: $white;
+      text-decoration: none;
+      padding: 20px;
+      text-align: center;
+      @media screen and (min-width: 720px) {
+        font-size: $font4;
+      }
+    }
+}
+
+.contact_container_div {
+  @include mytheme;
+  min-height: 100vh;
+  section {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      color: $white;
+      text-transform: uppercase;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  section:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 10;
+    div {
+      opacity: 0;
+      animation: 2s fadeIn forwards .5s;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#faq {
+  background: $bluish;
+}
+
+#contact {
+  background: $almostblac;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  100% { opacity:1 }
 }

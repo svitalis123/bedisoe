@@ -63,7 +63,7 @@ function Header() {
                 <Link to="/" style={{ textDecoration: 'none', color: '#111' }}><MenuItem onClick={handleClose}>Home</MenuItem></Link>
                 <Link to="/products" style={{ textDecoration: 'none', color: '#111' }}><MenuItem onClick={handleClose}>Products</MenuItem></Link>
                 <Link to="/contact" style={{ textDecoration: 'none', color: '#111' }}><MenuItem onClick={handleClose}>Contact</MenuItem></Link>
-                <MenuItem onClick={handleClose}>About</MenuItem>
+                <Link to="/about" style={{ textDecoration: 'none', color: '#111' }}><MenuItem onClick={handleClose}>About</MenuItem></Link>
               </Menu>
             </div>
           </>
@@ -74,7 +74,7 @@ function Header() {
                 <Link to="/">Home</Link>
                 <Link to="/products">Products</Link>
                 <Link to="/contact">Contact</Link>
-                <Link to="/">About</Link>
+                <Link to="/about">About</Link>
               </nav>
             </div>
           </>

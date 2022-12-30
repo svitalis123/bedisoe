@@ -13,7 +13,7 @@ $font3: 15px;
 
 @mixin keyframessm(){
   @media screen and (min-width:768px) {
-    height: 70vh;
+    height: 80vh;
   }
 }
 
@@ -39,7 +39,7 @@ $font3: 15px;
   justify-content: center;
   align-items: center;
   z-index: 3;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   @include mytheme;
   @include keyframessm;

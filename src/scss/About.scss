@@ -1,0 +1,25 @@
+$yellow: #fbe828;
+$white : #fff;
+$bluish: #677ee8;
+$darkbl: #754fa6;
+$almostblac: #0c1421;
+$black: rgba(37, 36, 36, 0.808);
+$font1: 25px;
+$font2: 18px;
+$font3: 15px;
+$font4: 40px;
+
+@mixin mytheme($norm: linear-gradient(to bottom, #000428, #004683)){
+  background: $norm;
+  color: $yellow;
+  box-shadow: 10% 10% 10% $yellow;
+}
+
+.about_container {
+  @include mytheme;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}

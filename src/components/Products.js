@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
 import data from './content';
-
 import '../css/Products.css';
 
 function Products() {
   return (
     <div className="product_container">
       <figure className="product_container_figure1">
-        <img src="/images/image/e7banner.png" alt="adverticement banner" />
+        <img src="/images/image/e8banner.png" alt="adverticement banner" />
       </figure>
       <div className="product_container_row1">
         {
@@ -17,6 +18,8 @@ function Products() {
                 <img src={`${item.image}`} alt={`${item.title}`} />
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
+                <Link to={`/product/${item.id}`}><Button variant="contained" color="secondary">Learn More</Button></Link>
+
               </article>
             </div>
           ))
@@ -33,6 +36,7 @@ function Products() {
                 <img src={`${item.image}`} alt={`${item.title}`} />
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
+                <Button variant="contained" color="secondary">Learn More</Button>
               </article>
             </div>
           ))
@@ -49,6 +53,7 @@ function Products() {
                 <img src={`${item.image}`} alt={`${item.title}`} />
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
+                <Button variant="contained" color="secondary">Learn More</Button>
               </article>
             </div>
           ))
