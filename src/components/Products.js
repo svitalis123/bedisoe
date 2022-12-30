@@ -18,7 +18,7 @@ function Products() {
                 <img src={`${item.image}`} alt={`${item.title}`} />
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <Link to={`/product/${item.id}`}><Button variant="contained" color="secondary">Learn More</Button></Link>
+                <Link to={`/product/${item.id}`} style={{ textDecoration: 'none', color: '#111' }}><Button variant="contained" color="secondary">Learn More</Button></Link>
 
               </article>
             </div>
@@ -36,7 +36,7 @@ function Products() {
                 <img src={`${item.image}`} alt={`${item.title}`} />
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <Button variant="contained" color="secondary">Learn More</Button>
+                <Link to={`/product/${item.id}`} style={{ textDecoration: 'none', color: '#111' }}><Button variant="contained" color="secondary">Learn More</Button></Link>
               </article>
             </div>
           ))
@@ -53,7 +53,7 @@ function Products() {
                 <img src={`${item.image}`} alt={`${item.title}`} />
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <Button variant="contained" color="secondary">Learn More</Button>
+                <Link to={`/product/${item.id}`} style={{ textDecoration: 'none', color: '#111' }}><Button variant="contained" color="secondary">Learn More</Button></Link>
               </article>
             </div>
           ))
