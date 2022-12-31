@@ -1,0 +1,84 @@
+.contact_container {
+  height: 100vh;
+  position: relative;
+}
+
+.contact_container_nav {
+  position: absolute;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  background: #754fa6;
+}
+.contact_container_nav a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .contact_container_nav a {
+    font-size: 40px;
+  }
+}
+
+.contact_container_div {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fbe828;
+  box-shadow: 10% 10% 10% #fbe828;
+  min-height: 100vh;
+}
+.contact_container_div section {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 0;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_container_div section div {
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact_container_div section:target {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 10;
+}
+.contact_container_div section:target div {
+  opacity: 0;
+  animation: 2s fadeIn forwards 0.5s;
+  width: 100%;
+  height: 100%;
+}
+
+#faq {
+  background: #677ee8;
+}
+
+#contact {
+  background: #0c1421;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,53 @@
+$yellow: #fbe828;
+$white : #fff;
+$bluish: #677ee8;
+$darkbl: #754fa6;
+$almostblac: #0c1421;
+$black: rgba(37, 36, 36, 0.808);
+$font1: 25px;
+$font2: 18px;
+$font3: 15px;
+$font4: 40px;
+
+@mixin mytheme($norm: linear-gradient(90deg, #667eea 0%, #764ba2 100%)){
+  background: $norm;
+  color: $yellow;
+  box-shadow: 10% 10% 10% $yellow;
+}
+
+.main_container {
+  min-height: 100vh;
+  /* using flex because of better browser support */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main_container_container {
+  width: 30vw !important;
+  margin: 5rem auto;
+  background: transparent;
+  border-radius: 0.25rem;
+  padding: 2.5rem 2rem;
+  max-width: 920px;
+  display: grid;
+  gap: 1rem 2rem;
+  @media screen and (min-width: 992px) {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 250px 1fr;
+  }
+  h3 {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 1.25rem;
+    @media screen and (min-width: 800px) {
+      font-size: 1.75rem;
+      line-height: 1;
+    }
+  }
+}
+
+.main_container_container_section {
+  display: contents !important;
+}

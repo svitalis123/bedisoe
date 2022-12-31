@@ -1,0 +1,12 @@
+.about_container {
+  background: linear-gradient(to bottom, #000428, #004683);
+  color: #fbe828;
+  box-shadow: 10% 10% 10% #fbe828;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/*# sourceMappingURL=About.css.map */

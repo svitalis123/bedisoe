@@ -1,0 +1,50 @@
+.header_container {
+  position: relative;
+  z-index: 3;
+}
+
+.small_container {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fbe828;
+  box-shadow: 10% 10% 10% #fbe828;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.MuiPaper-root {
+  left: 178px !important;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  min-width: 200px !important;
+}
+
+.small_container_button1 {
+  color: #fbe828 !important;
+}
+.small_container_button1 .small_container_button1_bars {
+  font-size: 25px;
+}
+
+.large_container {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fbe828;
+  box-shadow: 10% 10% 10% #fbe828;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.large_container nav {
+  display: flex;
+  gap: 2rem;
+}
+.large_container nav a {
+  color: #fbe828;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=header.css.map */
